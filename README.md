@@ -44,7 +44,9 @@
 ###
 
 <picture>
-<img src="https://raw.githubusercontent.com/mohitchamoIi/mohitchamoIi/output/snake.svg" alt="Snake animation" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/mohitchamoIi/mohitchamoIi/blob/output/snake-dark.svg" />
+  <img src="https://github.com/mohitchamoIi/mohitchamoIi/blob/output/snake.svg" />
 </picture>
+
 
 ###
