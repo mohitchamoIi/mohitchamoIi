@@ -48,5 +48,9 @@
   <img src="https://github.com/mohitchamoIi/mohitchamoIi/blob/output/snake.svg" />
 </picture>
 
+## 🎮 Dev Progress Map
+
+![Game Board](https://raw.githubusercontent.com/mohitchamoIi/mohitchamoIi/output/game-board.svg)
+
 
 ###
