@@ -48,9 +48,10 @@
   <img src="https://github.com/mohitchamoIi/mohitchamoIi/blob/output/snake.svg" />
 </picture>
 
-## 🎮 Dev Progress Map
+## 🚀 Space Shooter Contributions
 
-![Game Board](https://raw.githubusercontent.com/mohitchamoIi/mohitchamoIi/output/game-board.svg)
+![Space Shooter](https://raw.githubusercontent.com/mohitchamoIi/mohitchamoIi/output/space-shooter.svg)
+
 
 
 ###
