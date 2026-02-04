@@ -1,4 +1,4 @@
-name: Generate space shooter contributions
+name: Generate space shooter
 
 on:
   schedule:
@@ -13,23 +13,18 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Generate space shooter SVG
-        uses: cyprieng/github-contribution-space-shooter@v1
+      - uses: actions/setup-node@v4
         with:
-          github_user: ${{ github.repository_owner }}
-          output: dist/space-shooter.svg
-          theme: space
-          ship: classic
-          speed: medium
-          explosions: true
+          node-version: 20
 
-      - name: Push SVG to output branch
+      - name: Generate SVG
+        run: node generator/generate.js
+
+      - name: Deploy
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
