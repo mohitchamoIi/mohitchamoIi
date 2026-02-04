@@ -48,7 +48,7 @@
   <img src="https://github.com/mohitchamoIi/mohitchamoIi/blob/output/snake.svg" />
 </picture>
 
-## 🚀 Space Shooter Contributions
+## 🚀 Space Shooter Mode
 
 ![Space Shooter](https://raw.githubusercontent.com/mohitchamoIi/mohitchamoIi/output/space-shooter.svg)
 
