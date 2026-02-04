@@ -1,0 +1,38 @@
+name: Generate space shooter contributions
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate space shooter SVG
+        uses: cyprieng/github-contribution-space-shooter@v1
+        with:
+          github_user: ${{ github.repository_owner }}
+          output: dist/space-shooter.svg
+          theme: space
+          ship: classic
+          speed: medium
+          explosions: true
+
+      - name: Push SVG to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
