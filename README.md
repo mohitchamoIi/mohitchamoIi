@@ -42,9 +42,9 @@
 </div>
 
 ###
-
+<p align="center">
   <picture>
-  <img src="https://github.com/mohitchamoIi/mohitchamoIi/blob/output/space-shooter.gif" alt="GitHub Activity Game" width="600"/>
+      <img src="https://raw.githubusercontent.com/mohitchamoIi/mohitchamoIi/main/assets/space-shooter.gif" width="600" alt="GitHub Activity Game"/>
   </picture>
-  
-###
+</p>
+
