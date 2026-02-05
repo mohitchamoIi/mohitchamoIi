@@ -1,0 +1,28 @@
+name: Generate Space Shooter
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate dummy GIF (test)
+        run: |
+          mkdir -p output
+          echo "GIF placeholder" > output/space-shooter.gif
+
+      - name: Commit to output branch
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: output
+          commit_message: "auto: update space shooter"
+          file_pattern: output/*
