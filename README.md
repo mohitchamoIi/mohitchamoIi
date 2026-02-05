@@ -43,6 +43,8 @@
 
 ###
 
-
+<p align="center">
+  <img src="https://github.com/mohitchamoIi/mohitchamoIi/blob/output/github-contribution-grid-snake.gif" alt="GitHub Activity Game" width="600"/>
+</p>
 
 ###
