@@ -1,28 +1,25 @@
-name: Generate Space Shooter
+name: Update Space Shooter GIF
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate dummy GIF (test)
-        run: |
-          mkdir -p output
-          echo "GIF placeholder" > output/space-shooter.gif
+      # 🔴 THIS STEP MUST BE HERE
+      - name: Create assets directory
+        run: mkdir -p assets
 
-      - name: Commit to output branch
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: czl9707/gh-space-shooter@v1
         with:
-          branch: output
-          commit_message: "auto: update space shooter"
-          file_pattern: output/*
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          output-path: assets/space-shooter.gif
+          strategy: random
