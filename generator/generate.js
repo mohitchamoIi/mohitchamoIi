@@ -6,6 +6,5 @@ const svg = `
   </text>
 </svg>
 `;
-
 fs.writeFileSync("assets/github-activity.svg", svg);
 console.log("SVG generated");
