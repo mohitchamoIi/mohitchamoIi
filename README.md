@@ -42,6 +42,7 @@
 </div>
 
 ###
+
 <p align="center">
   <picture>
       <img src="https://raw.githubusercontent.com/mohitchamoIi/mohitchamoIi/main/assets/space-shooter.gif" width="600" alt="GitHub Activity Game"/>
